@@ -6,20 +6,24 @@ export default function HomePage() {
 
   return (
     <Page>
-      <h1 className="text-xl">Sunshine Scripts</h1>
-      <h2 className="text-xl">Global git ignore</h2>
+      <div className="flex flex-col gap-2">
+        <h1 className="text-xl">Sunshine Scripts</h1>
+        <p className="flex flex-col gap-1">
+          <h2 className="text-xl">Global git ignore</h2>
 
-      <code className="block">
-        echo {filename} {'>>'} ~/.gitignore_global <br /> git config --global
-        core.excludesfile ~/.gitignore_global
-      </code>
+          <code className="block">
+            echo {filename} {'>>'} ~/.gitignore_global <br /> git config
+            --global core.excludesfile ~/.gitignore_global
+          </code>
 
-      <a
-        className="text-white underline"
-        href="https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder"
-      >
-        Source
-      </a>
+          <a
+            className="text-white underline"
+            href="https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder"
+          >
+            Source
+          </a>
+        </p>
+      </div>
     </Page>
   );
 }
