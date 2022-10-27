@@ -1,8 +1,9 @@
-import HomePage from "../pages/home";
+import HomePage, { homePageLoader } from '../pages/home';
 
 export const routes = [
   {
-    path: "/",
+    path: '/',
     element: <HomePage />,
+    loader: homePageLoader,
   },
 ];
