@@ -23,6 +23,10 @@ export default function HomePage() {
             Source
           </a>
         </p>
+        <p className="flex flex-col gap-1">
+          <h2 className="text-xl">Show hidden files</h2>
+          <code className="block">ls -a</code>
+        </p>
       </div>
     </Page>
   );
